@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E964422C-3383-4444-B440-FA3C4B0AF57D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HallManagement1</RootNamespace>
+    <AssemblyName>HallManagement1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="checking\CheckAccountmanager.cs" />
+    <Compile Include="checking\ComplainChek.cs" />
+    <Compile Include="checking\DeleteAllotmentCheck.cs" />
+    <Compile Include="checking\InsertUpdateDeleteApplicantChecking.cs" />
+    <Compile Include="checking\LoginChecking.cs" />
+    <Compile Include="checking\ResetPasswordCheck.cs" />
+    <Compile Include="checking\RoomEntryCheck.cs" />
+    <Compile Include="DataAccess\AllotmentInfoDataAccess.cs" />
+    <Compile Include="DataAccess\ComplainDataAccess.cs" />
+    <Compile Include="DataAccess\CreateAccountDataAccess.cs" />
+    <Compile Include="checking\NewAllotCheck.cs" />
+    <Compile Include="DataAccess\NewAllotDataAccess.cs" />
+    <Compile Include="DataAccess\ResetPasswordDataAccess.cs" />
+    <Compile Include="DataAccess\RoomEntryDateAccess.cs" />
+    <Compile Include="DataAccess\StudentDataAccess.cs" />
+    <Compile Include="Domain\AllotmentInfo.cs" />
+    <Compile Include="Domain\ComplainInfo.cs" />
+    <Compile Include="Domain\NewAllotInfo.cs" />
+    <Compile Include="Domain\RoomInfo.cs" />
+    <Compile Include="Domain\StudentInfo.cs" />
+    <Compile Include="UI\AllotmentInfoDeleteUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AllotmentInfoDeleteUI.Designer.cs">
+      <DependentUpon>AllotmentInfoDeleteUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AllotmentInfoUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AllotmentInfoUI.Designer.cs">
+      <DependentUpon>AllotmentInfoUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Chat_boxUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Chat_boxUI.Designer.cs">
+      <DependentUpon>Chat_boxUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ComplainUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ComplainUI.Designer.cs">
+      <DependentUpon>ComplainUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CreateAccountUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CreateAccountUI.Designer.cs">
+      <DependentUpon>CreateAccountUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\LoginDataAccess.cs" />
+    <Compile Include="UI\HomePageUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\HomePageUI.Designer.cs">
+      <DependentUpon>HomePageUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InsertUpdateDeleteApplicantInfoUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InsertUpdateDeleteApplicantInfoUI.Designer.cs">
+      <DependentUpon>InsertUpdateDeleteApplicantInfoUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LoginFormUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LoginFormUI.Designer.cs">
+      <DependentUpon>LoginFormUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\NewAllotUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NewAllotUI.Designer.cs">
+      <DependentUpon>NewAllotUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ResetPasswordUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ResetPasswordUI.Designer.cs">
+      <DependentUpon>ResetPasswordUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Domain\UserLogin.cs" />
+    <Compile Include="UI\RoomEntryUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RoomEntryUI.Designer.cs">
+      <DependentUpon>RoomEntryUI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\AllotmentInfoDeleteUI.resx">
+      <DependentUpon>AllotmentInfoDeleteUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AllotmentInfoUI.resx">
+      <DependentUpon>AllotmentInfoUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Chat_boxUI.resx">
+      <DependentUpon>Chat_boxUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ComplainUI.resx">
+      <DependentUpon>ComplainUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CreateAccountUI.resx">
+      <DependentUpon>CreateAccountUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\HomePageUI.resx">
+      <DependentUpon>HomePageUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InsertUpdateDeleteApplicantInfoUI.resx">
+      <DependentUpon>InsertUpdateDeleteApplicantInfoUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LoginFormUI.resx">
+      <DependentUpon>LoginFormUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\NewAllotUI.resx">
+      <DependentUpon>NewAllotUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ResetPasswordUI.resx">
+      <DependentUpon>ResetPasswordUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RoomEntryUI.resx">
+      <DependentUpon>RoomEntryUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hallManagement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cool_blue-widwe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
